@@ -3,8 +3,8 @@
 */
 const desafio02 = (n) => {
     //precondición para esta función: n no puede ser menor a 2
-    var result = [0,1];
-    var index = 1;
+    let result = [0,1];
+    let index = 1;
     while(index <= n){
         result.push(result[index] + result[index - 1]);
         index++;
