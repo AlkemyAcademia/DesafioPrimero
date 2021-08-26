@@ -1,15 +1,8 @@
 /*
-** Calcular la suma de todos los números pares que se encuentren entre el 10 y el 50
+** Realizar una función(string) que capitalice la primera letra de cada palabra en una cadena de texto.
 */
-const desafio01 = () => {
-    var inicio = 10;
-    let fin = 50;
-    var result = 0;
-    while(inicio <= fin){
-        if(inicio % 2 == 0){
-            result += inicio;
-        }
-        inicio++;
-    }
+const desafio03 = (texto) => {
+    return texto.split(" ").map((palabra) => palabra.charAt(0).toUpperCase() + palabra.slice(1)).join(" ");
 }
-desafio01();
+desafio03("capitalizando palabras pero solo la primer letra"); 
+
