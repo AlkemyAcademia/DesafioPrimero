@@ -1,15 +1,14 @@
 /*
-** Calcular la suma de todos los números pares que se encuentren entre el 10 y el 50
+** Realizar una función(n) que calcule la secuencia fibonacci de n elementos
 */
-const desafio01 = () => {
-    var inicio = 10;
-    let fin = 50;
-    var result = 0;
-    while(inicio <= fin){
-        if(inicio % 2 == 0){
-            result += inicio;
-        }
-        inicio++;
+const desafio02 = (n) => {
+    //precondición para esta función: n no puede ser menor a 2
+    var result = [0,1];
+    var index = 1;
+    while(index <= n){
+        result.push(result[index] + result[index - 1]);
+        index++;
     }
+  return result;
 }
-desafio01();
+desafio02(5);
